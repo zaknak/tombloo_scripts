@@ -21,7 +21,7 @@ Tombloo.Service.extractors.register([
 				//実行元アドレスをイラストページのアドレスに入れ替え
 					ctx.href = ctx.link.href;
 				//相対アドレスが取得されていた場合、ホスト部を補間
-					if(!linkHREF.match(/^https?:\/\//)) linkHREF = hostURL + linkHREF;
+					if(!linkHREF.match(/^http:\/\//)) linkHREF = hostURL + linkHREF;
 				//イラストに設定されたリンクのアドレスを返す
 					return linkHREF;
 				});
