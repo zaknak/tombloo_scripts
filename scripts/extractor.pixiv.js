@@ -1,6 +1,6 @@
 Tombloo.Service.extractors.register([
 	{
-		name : 'Photo - pxiv',
+		name : 'Photo - pixiv',
 		ICON : 'http://www.pixiv.net/favicon.ico',
 		check : function(ctx){
 			return ctx.onImage && ctx.target.src.match(/^http:\/\/img\d.+?\.pixiv\.net\/img\//) && ctx.onLink;
